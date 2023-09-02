@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open Music</title>
+    <script type="module" src="./src/scripts/index.js" defer></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/globalStyles.css" />
+    <link rel="stylesheet" href="./src/styles/index.css" />
+
+    <!-- SCRIPTS  -->
+  </head>
+  <body>
+    <header>
+      <h1>Open music</h1>
+      <button id="dark-mode">Dark Mode</button>
+    </header>
+    <main>
+      <section class="filters">
+        <div class="genres">
+          <h2>Gênero Musical</h2>
+          <ul class="genres-list"></ul>
+        </div>
+
+        <div class="price-filter">
+          <h2>Definir Preço</h2>
+          <p>Até R$ <input type= "range" min="0" max="100" value="0" class="filter"/></p>
+        </div>
+      </section>
+      <section class="card__contender">
+        <h2>Álbuns Encontrados</h2>
+        <ul class="cards"></ul>
+      </section>
+    </main>
+  </body>
+</html>
